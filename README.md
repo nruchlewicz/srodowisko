@@ -2,7 +2,7 @@
 
 Zadanie 1
 
-'''c
+```c
 int main()
 {
  int i;
@@ -11,4 +11,4 @@ int main()
      printf("%i",tabela[i]);
  return 0;
 }
-'''
+```
