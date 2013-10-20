@@ -62,7 +62,7 @@ main()
 
  }
  ```
-//suma kwadratow
+suma kwadratow
 ```c
 main()
 { 
@@ -78,3 +78,65 @@ e=b*b;
 }}
 
 ```
+program, ktory wczytuje liczbe naturalna n i drukuje wartosc sumy kwadratow
+```c
+main()
+ {
+   int a,i,s;
+   do{
+   printf("Podaj liczbe naturalna");
+   scanf("%d",&a);
+   }while (a<0);
+   s=0;
+   for (i=0; i<=a; i=i+1){
+     s=s+i*i;
+ }
+   printf("suma kwadratów wynosi:%d ",s);
+ }
+```
+dzialania rozne 
+```c
+main ()
+{ 
+  int n1, n2, n3;
+  n1= 5+3*8/2-3;
+  printf("5+3*8/2-3=%i",n1);
+  n2=2%2+2*2-2/2;
+  printf("\nwynik=%i",n2);
+  n3=2*4*(5+9/2);
+  printf("\n2*4*(5+9/2)=%i",n3);
+
+}
+```
+
+Program, ktory wypisuje dane z tabeli w odwrotnej kolejnosci
+```c
+int main()
+{
+  int tabela[]={1,2,4,6,12};
+  int a;
+  for( a=4; a>=0; a=a-1)
+    {
+      printf("\n%i",tabela[a]);
+   
+    }
+  return 0;
+}
+```
+program wypisujacy potegi liczby 2 za pomoca petli while i for
+```c
+ main()
+{
+  int i;
+  i=1;
+  while (i<=2010){
+    printf("\n%i",i);
+    i=i*2;
+  }
+  for(i=1; i<=2010; i=i*2)
+    {
+      printf("\n%i",i);
+    }
+}
+```
+
