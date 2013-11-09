@@ -140,3 +140,37 @@ program wypisujacy potegi liczby 2 za pomoca petli while i for
 }
 ```
 
+Zadanie 12/13. Program wczyta od uzytkownika dane 5-elementowej tab liczb całkowitych, a następnie wypize jej najmniejszy / największy element. 
+
+```c
+#include "stdio.h"
+main()
+{
+int i, n, wynik;
+int a[5];
+
+for (i=0; i<5; i++)
+{
+printf("Podaj %i element ", i);
+scanf("%d", &a[i]);
+}
+wynik=a[1];
+for (i=0; i<5; i++) {
+ if (wynik>a[i])
+ {
+wynik=a[i];
+ }
+}
+printf("Najmniejszy element w tablicy to %d\n", wynik);
+wynik = a[1];
+for (i=0; i<5; i++){
+ if (wynik<a[i])
+ {
+ wynik = a[i];
+ }
+}
+printf("Najwiekszy element w tablicy to %d\n", wynik);
+
+}
+
+
