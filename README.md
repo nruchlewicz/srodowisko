@@ -172,5 +172,38 @@ for (i=0; i<5; i++){
 printf("Najwiekszy element w tablicy to %d\n", wynik);
 
 }
+```
 
+Program, sprawdzajajacy czy dana liczba jest pierwsza.
+```c
+# include <stdio.h>
+main()
+{
+  int a,i,b;
+  printf("Podaj liczbe: ");
+  scanf ("%i",&a);
+  b=0;
+  for (i=1; i<=a; i++){
+    if (a%i==0) 
+      b=b+1;
+  }
+    if (b==2) printf("podana liczba jest pierwsza");
+    else printf("Podana  liczba nie jest liczba pierwsza");
+  
+} 
+```
+program, ktory wypisuje wszystkie dzielniki dla podanej liczby
+```c
+#include <stdio.h>
+main ()
+{
+  int a,i;
+  printf("Podaj liczbe: ");
+  scanf("%i",&a);
+  for (i=1; i<=a; i++){
 
+    if (a%i==0) printf("\nDzielnik:%i",i);
+    else printf(" ");
+      }
+}
+```
