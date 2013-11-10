@@ -139,7 +139,221 @@ program wypisujacy potegi liczby 2 za pomoca petli while i for
     }
 }
 ```
-
+#LAB3
+1. program z zadeklarowana tablica 5 liczb calkowitych i wyslwietla jej zawartosc oraz zawartosc w odwrotnej kolejnosci.
+```c
+#include <stdio.h>
+main ()
+{
+  int tab[]={1,3,7,8,9};
+  int i;
+  for (i=0; i<5; i++)
+    {
+      printf("\n%i",tab[i]);
+    }
+  printf("\n");
+for (i=4; i>=0; i--)
+    {
+      printf("\n%i",tab[i]);
+    }
+}
+```
+2. wczytuje do uzytkownika dane piecioelementowej tablicy i wypisuje jej zawartosc  oraz zawartosc w odwrtnej kolejnosci
+```c
+#include <stdio.h>
+main()
+{
+  int tab[5];
+  int i;
+printf("podaj 5 liczb do tabeli");
+  for (i=0; i<5; i++)
+    {   
+scanf("%i",&tab[i]);
+    }
+  printf("Liczby w tabeli to: ");
+  for (i=0; i<5; i++)
+    {
+      printf("%i ",tab[i]);
+    }
+  printf("\nLiczby w tabeli w odwrotnej kolejnosci to: ");
+for (i=4; i>=0; i--)
+    {
+      printf("%i ",tab[i]);
+    }
+}
+```
+3. wczytuje od uzytkownika 5 elementow do tablicy i wyswitla ilosc parzystych liczb
+```c
+#include <stdio.h>
+main()
+{
+  int tab[5];
+  int i,a;
+  a=0;
+printf("podaj 5 liczb do tabeli");
+  for (i=0; i<5; i++)
+    {   
+scanf("%i",&tab[i]);
+    }
+  for (i=0; i<5; i++)
+    {
+      if ((tab[i]%2)==0) a=a+1;
+      else a=a;
+    }
+  printf("Liczba parzystych elementów tablcy to: %i", a);
+  a=0;
+}
+```
+4.zadeklarowane 2 5-elementowe tab, wczytuje do 1 tab, a nastepnie przekopiuje powiekszone dwukrotnie dane do drugiej tab.
+```c
+#include <stdio.h>
+main()
+{
+  int tab[5];
+  int tablica[5];
+  int i,a;
+  a=0;
+    printf("podaj 5 liczb do tabeli");
+     for (i=0; i<5; i++)
+       {   
+       scanf("%i",&tab[i]);
+       }
+ printf("Liczby powiekszone dwukrotnie to: ");
+  for (i=0; i<5; i++)
+    {
+      a=tab[i]*2;
+      printf("%i ",a);
+    }
+}
+```
+5. wczytuje dane do 5-elementowej tab, a nastepnie wyswietla najwiekszy element.
+```c
+#include <stdio.h>
+main()
+{
+ int tab[5];
+ int i,a;
+ a=0;
+    printf("podaj 5 liczb do tabeli\n");
+     for (i=0; i<5; i++)
+       {   
+       scanf("%i",&tab[i]);
+       }
+     for (i=0; i<5; i++){
+       if (tab[1]>tab[2] && tab[1]>tab[3] && tab[1]>tab[4] && tab[1]>tab[5]) a=tab[1];
+	 else if(tab[2]>tab[3] && tab[2]>tab[4] && tab[2]>tab[5]) a=tab[2];
+	 else if(tab[3]>tab[4] && tab[3]>tab[5]) a=tab[3];
+	 else if(tab[4]>tab[5]) a=tab[4];
+	 else a=tab[5];
+     }
+printf("%i ",a);
+}
+```
+6. zadeklarowana tab 5-elementow i uzupelni kolejnymi potegami liczby2 i wyswietli;
+```c#include <stdio.h>
+main()
+{
+  int tab[5];
+  int i,a;
+  a=2;
+  for (i=0; i<5; i++)
+    {
+      tab[i]=a;
+      a=a*2;
+	}
+  for (i=0; i<5; i++)
+    {
+      printf("%i ", tab[i]);
+    }
+}
+```
+7. wczytuje od uzytkownika dane do tab i wyswietla ich sume.
+```c
+#include <stdio.h>
+main()
+{
+  int tab[5];
+  int i,suma;
+  suma=0;
+  printf("uzupelnij tabele:\n");
+  for (i=0; i<4; i++)
+    { 
+      scanf("%i ",&tab[i]);
+    }
+  for (i=0; i<4; i++)
+    {
+      suma=suma+tab[i];
+    }
+  printf("Suma elementow w tablicy to: %i",suma);
+}
+```
+8. zadeklarowane 2 5-elementowe tab, wczytuje do 1 tab, a nastepnie przekopiuje dane do drugiej tab.
+```c
+#include <stdio.h>
+main()
+{
+  int tab[5];
+  int tablica[5];
+  int i,a;
+  a=0;
+    printf("podaj 5 liczb do tabeli");
+     for (i=0; i<5; i++)
+       {   
+       scanf("%i",&tab[i]);
+       }
+ printf("Liczby w tabeli to odwrotnie: ");
+  for (i=4; i>=0; i--)
+    {
+      a=tab[i];
+      printf("%i ",a);
+    }
+}
+```
+9. wczytuje od uzytkownika 5-elementowa tab i przestawia pierwszy i ostatni element i wyswietla
+```c
+#include <stdio.h>
+main()
+{
+  int tab[5];
+  int i,tmp;
+  tmp=0;
+  printf("uzupelnij tablice:\n ");
+  for (i=0; i<5; i++)
+    {
+      scanf("%i",&tab[i]);
+    }
+  tmp=tab[0];
+  tab[0]=tab[4];
+  tab[4]=tmp;
+  for (i=0; i<5; i++)
+    {
+      printf("%i ",tab[i]);
+    }
+}
+```
+10. 2 tablice, jedna 5-elem, druga 10elem. Pobiera dane od użytkownika do pierwszej przekopiuje dwa razy dane z pierwszej do drugiej i wyswietli.
+```c
+#include <stdio.h>
+main()
+{
+  int tab[5];
+  int tabe[10];
+  int i,j;
+  printf("uzupelnij tablice: \n");
+  for (i=0; i<5; i++)
+    {
+      scanf("%i ",&tab[i]);
+    }
+  i=0;
+  for (j=0; j<10; j++)
+    {
+      if (tab[i]>tabe[j]){ tabe[j]=tab[i];
+       printf("%i ",tabe[j]);
+       i++;}
+      
+      else i=0; printf("%i ",tabe[j]); 
+    }}
+```
 Zadanie 12/13. Program wczyta od uzytkownika dane 5-elementowej tab liczb całkowitych, a następnie wypize jej najmniejszy / największy element. 
 
 ```c
@@ -173,6 +387,7 @@ printf("Najwiekszy element w tablicy to %d\n", wynik);
 
 }
 ```
+#Lab4
 
 Program, sprawdzajajacy czy dana liczba jest pierwsza.
 ```c
@@ -205,5 +420,31 @@ main ()
     if (a%i==0) printf("\nDzielnik:%i",i);
     else printf(" ");
       }
+}
+```
+Program, ktory dla liczby , podanej z klawiatury oblicza najmniejsza liczbe n taka, ze 1+2+3+...+n>=m.
+```c
+#include <stdio.h>
+main()
+{
+  int m,i,suma;
+  printf("podaj liczbe M: ");
+  scanf("%i",&m);]
+//za pomoca petli for.
+  suma=0;
+  for (i=0; suma<=m; i++) {
+    suma=suma+i;
+    if (suma>=m) printf("%i\n",i);
+    else printf("");
+  }
+//za pomoca petli while.
+  suma=0;
+  i=0;
+  while (suma<=m)
+	{
+	 suma=suma+i;
+	 if (suma>=m) printf("%i",i);
+	 else i++;
+		}
 }
 ```
