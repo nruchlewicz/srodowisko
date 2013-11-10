@@ -496,3 +496,75 @@ printf("%i",tablica[i]);
 return 0;
 }
 ```
+#ZAMIANA LICZB Z SYSTEMU "10" na "2", "8" i "16"
+
+```c
+//zamiana liczby z systemu "10" na "2", "8", "16"
+#include <stdio.h>
+ int main(){
+ 	
+   int liczba,b,i,j,liczba1, liczba2;
+ 	b=0;
+ 	i=0;
+ 	j=0;
+        printf("Podaj liczbe dziesietna   \n");
+ 	scanf("%d",&liczba);
+        liczba1=liczba;
+	liczba2=liczba;
+ 	printf("\n");
+     int tablica[50];
+     //zamiana na system "2"
+while (liczba>0) {
+ b=liczba%2;
+  if (b==1) (tablica[j]=1);
+  if (b==0) (tablica[j]=0);
+ liczba=liczba/2;
+ j++;
+}
+printf("System dwojkowy:");
+for (i=j-1; i>=0; i=i-1){
+  printf("%i",tablica[i]);
+}
+//zamiana na system "8"
+ int tab[50];
+ b=0;
+ i=0;
+ j=0;
+ while (liczba1>0){
+   b=liczba1%8;
+    if (b==0) (tab[j]=0);
+    else (tab[j]=b);
+   liczba1=liczba1/8;
+   j++;
+ }
+ printf("\nsystem osemkowy: ");
+ for (i=j-1; i>=0; i=i-1){
+   printf("%i",tab[i]);
+ }
+ //zamiana na system "16"
+ char tab1[50];
+ b=0;
+ i=0;
+ j=0;
+ while (liczba2>0){
+   b=liczba2%16;
+   if (b==0) (tab1[j]='0');
+   if ((b>0)&&(b<10)) (tab1[j]=b);
+   if (b==10) (tab1[j]='A');
+   if (b==11) (tab1[j]='B');
+   if (b==12) (tab1[j]='C');
+   if (b==13) (tab1[j]='D');
+   if (b==14) (tab1[j]='E');
+   if (b==15) (tab1[j]='F');
+   liczba2=liczba2/16;
+   j++;
+ }
+ char z;
+ printf("\nsystem szesnastkowy");
+for (i=j-1; i>=0; i=i-1){
+   printf("%c",tab1[i]);
+ }
+ printf("\n");
+return 0;	
+}
+```
