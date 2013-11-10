@@ -184,6 +184,7 @@ for (i=4; i>=0; i--)
 }
 ```
 3. wczytuje od uzytkownika 5 elementow do tablicy i wyswitla ilosc parzystych liczb
+
 ```c
 #include <stdio.h>
 main()
@@ -205,7 +206,9 @@ scanf("%i",&tab[i]);
   a=0;
 }
 ```
+
 4.zadeklarowane 2 5-elementowe tab, wczytuje do 1 tab, a nastepnie przekopiuje powiekszone dwukrotnie dane do drugiej tab.
+
 ```c
 #include <stdio.h>
 main()
@@ -227,7 +230,9 @@ main()
     }
 }
 ```
+
 5. wczytuje dane do 5-elementowej tab, a nastepnie wyswietla najwiekszy element.
+
 ```c
 #include <stdio.h>
 main()
@@ -250,8 +255,11 @@ main()
 printf("%i ",a);
 }
 ```
+
 6. zadeklarowana tab 5-elementow i uzupelni kolejnymi potegami liczby2 i wyswietli;
-```c#include <stdio.h>
+
+```c
+#include <stdio.h>
 main()
 {
   int tab[5];
@@ -268,7 +276,9 @@ main()
     }
 }
 ```
+
 7. wczytuje od uzytkownika dane do tab i wyswietla ich sume.
+
 ```c
 #include <stdio.h>
 main()
@@ -288,7 +298,9 @@ main()
   printf("Suma elementow w tablicy to: %i",suma);
 }
 ```
+
 8. zadeklarowane 2 5-elementowe tab, wczytuje do 1 tab, a nastepnie przekopiuje dane do drugiej tab.
+
 ```c
 #include <stdio.h>
 main()
@@ -310,7 +322,9 @@ main()
     }
 }
 ```
+
 9. wczytuje od uzytkownika 5-elementowa tab i przestawia pierwszy i ostatni element i wyswietla
+
 ```c
 #include <stdio.h>
 main()
@@ -332,7 +346,9 @@ main()
     }
 }
 ```
+
 10. 2 tablice, jedna 5-elem, druga 10elem. Pobiera dane od użytkownika do pierwszej przekopiuje dwa razy dane z pierwszej do drugiej i wyswietli.
+
 ```c
 #include <stdio.h>
 main()
@@ -355,6 +371,7 @@ main()
       else i=0; printf("%i ",tabe[j]); 
     }}
 ```
+
 Zadanie 12/13. Program wczyta od uzytkownika dane 5-elementowej tab liczb całkowitych, a następnie wypize jej najmniejszy / największy element. 
 
 ```c
