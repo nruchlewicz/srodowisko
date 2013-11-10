@@ -139,8 +139,7 @@ program wypisujacy potegi liczby 2 za pomoca petli while i for
     }
 }
 ```
-#LAB3
-=========
+LAB3:
 1. program z zadeklarowana tablica 5 liczb calkowitych i wyslwietla jej zawartosc oraz zawartosc w odwrotnej kolejnosci.
 ```c
 #include <stdio.h>
