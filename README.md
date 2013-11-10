@@ -159,6 +159,7 @@ for (i=4; i>=0; i--)
 }
 ```
 2. wczytuje do uzytkownika dane piecioelementowej tablicy i wypisuje jej zawartosc  oraz zawartosc w odwrtnej kolejnosci
+
 ```c
 #include <stdio.h>
 main()
