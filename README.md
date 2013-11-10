@@ -489,8 +489,8 @@ while (liczba>0) {
  liczba=liczba/2;
  j++;
 }
+printf("system dwojkowy: ");
 for (i=j-1; i>=0; i=i-1){
-
 printf("%i",tablica[i]);
 }
 return 0;
