@@ -568,3 +568,33 @@ for (i=j-1; i>=0; i=i-1){
 return 0;	
 }
 ```
+
+ZAD dokonczyc w domu:
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+int main (int argc, char *argv[])
+{
+  FILE *fout;
+
+  int a,i;
+  float c,d;
+  float tab[11];
+  c=0.0;
+if ((fout=fopen("dane.dat", "w")) == NULL) {
+    printf("Nie mogę otworzyć pliku do zapisu'\n");
+    return 2;
+ }
+      for (i=0; i<11; i++)
+	{
+	  fprintf(fout,"%1.2lf\t",(tab[i]=c));
+	  d=c*c;
+	  fprintf(fout,"%1.2lf\n",(tab[i]=d));
+       c=c+0.1;
+	}
+  fclose(fout);
+ 
+  return 0;
+ }
+```
