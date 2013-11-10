@@ -466,3 +466,33 @@ main()
 		}
 }
 ```
+
+#ZAMIANA  LICZB Z SYSTEMU "10" na "2"
+
+```c
+#include <stdio.h>
+ int main(){
+ 	
+    int liczba,b,i,j;
+ 	b=0;
+ 	i=0;
+ 	j=0;
+        printf("Podaj liczbe dziesietna   \n");
+ 	scanf("%d",&liczba);
+ 	printf("\n");
+     int tablica[50];
+ 
+while (liczba>0) {
+ b=liczba%2;
+ if (b==1) (tablica[j]=1);
+   if (b==0) (tablica[j]=0);
+ liczba=liczba/2;
+ j++;
+}
+for (i=j-1; i>=0; i=i-1){
+
+printf("%i",tablica[i]);
+}
+return 0;
+}
+```
