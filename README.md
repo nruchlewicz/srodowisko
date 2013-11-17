@@ -632,3 +632,33 @@ printf("Iloczyn skalarny wynosi: %lf",b);
 }
 
 ```
+
+Wczytuje 2 tablice liczb rzeczywistych i drukuje wynik ich porownania leksykalnego.
+```c
+#include <stdio.h>
+main()
+{
+  int n,i;
+  char a;
+  printf("Podaj liczbe elementow tablic: ");
+  scanf("%i",&n);
+  double tab1[n];
+  double tab2[n];
+  printf("Uzupełnij pierwsza tablice %i elementowa: ",n);
+  for (i=0; i<n; i++){
+    scanf("%lf",&tab1[i]);
+  }
+  printf("Uzupelnij druga tablice %i elementowa: ",n);
+  for (i=0; i<n; i++){
+    scanf("%lf",&tab2[i]);
+  }
+  i=0;
+  while (tab1[i]==tab2[i] && (i<n))    {
+    i=i+1;
+  }
+  if (i<n){
+    if (tab1[i]>tab2[i]) printf("Wieksza leksykalnie jest tablica 1");
+    if (tab1[i]<tab2[i]) printf("Leksykalnie wieksza jest tablica 2");}
+    else printf("Tablice sa rowne");
+}
+```
