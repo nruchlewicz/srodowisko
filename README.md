@@ -662,3 +662,26 @@ main()
     else printf("Tablice sa rowne");
 }
 ```
+
+Szyfr Cezara
+=======
+```c
+#include <stdio.h>
+main ()
+{
+  int a,i;
+  printf("Podaj ile chcesz znakow zakodowac: ");
+  scanf("%i",&a);
+  char tablica[50];
+  printf("Podaj to co chcesz zakodowac(duze litery!):"); 
+  for(i=0; i<=a; i++){
+    scanf("%c",&tablica[i]);
+    // tablica[i]=getchar();
+  }
+ 
+  for (i=1; i<=a; i++){
+    tablica[i]=65+(tablica[i]-62)%26;
+    printf("%c",tablica[i]);
+  }
+}
+```
