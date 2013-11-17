@@ -666,22 +666,30 @@ main()
 Szyfr Cezara
 =======
 ```c
+//SZYFR CEZARA
 #include <stdio.h>
 main ()
 {
   int a,i;
   printf("Podaj ile chcesz znakow zakodowac: ");
   scanf("%i",&a);
-  char tablica[50];
-  printf("Podaj to co chcesz zakodowac(duze litery!):"); 
+  char tablica[a];
+  printf("Podaj to co chcesz zakodowac (duze litery!):");
   for(i=0; i<=a; i++){
     scanf("%c",&tablica[i]);
     // tablica[i]=getchar();
   }
- 
+  //szyfrowanie
   for (i=1; i<=a; i++){
     tablica[i]=65+(tablica[i]-62)%26;
     printf("%c",tablica[i]);
   }
+  //deszyfrowanie
+  printf("\n");
+  for (i=1; i<=a; i++)
+    {
+      tablica[i]=65+(tablica[i]+62)%26;
+      printf("%c",tablica[i]);
+    }
 }
 ```
