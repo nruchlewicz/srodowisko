@@ -598,3 +598,37 @@ if ((fout=fopen("dane.dat", "w")) == NULL) {
   return 0;
  }
 ```
+Lab6
+========
+Program Wczytuje 2 tablice liczb rzeczywistych taj samej dlugosci i drukuje ich iloczyn skalarny.
+```c
+#include <stdio.h>
+main()
+{
+  int n,i;
+  double a,b;
+  printf("Podaj liczbe elementow tablicy: ");
+  scanf("%i",&n);
+  double tab1[n];
+  double tab2[n];
+  printf("\nUzupelnij tablice: %i elementów",n);
+  for (i=0; i<n; i++)
+  {
+    scanf("%lf",&tab1[i]);
+  }
+  printf("Uzupelnij druga %i tablice: ",n);
+  for (i=0; i<n; i++)
+  {
+    scanf("%lf",&tab2[i]);
+  }
+  a=0;
+  b=0;
+ for (i=0; i<n; i++)
+  {
+    a=(tab1[i]*tab2[i]);
+    b=b+a;
+    }
+printf("Iloczyn skalarny wynosi: %lf",b);
+}
+
+```
