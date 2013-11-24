@@ -745,3 +745,52 @@ main ()
 }
 }
 ```
+3. program,ktory wyswitla biezacy dzien tygodnia i pokazuje jaki dzien tygodnia bedzie za 100 dni.
+```c
+#include <stdio.h>
+main()
+{
+  int a,b;
+  printf("Jaki jest dzis dzien tygodnia?1-7 ");
+  scanf("%d",&a);
+  printf("dzis jest: ");
+  switch (a)
+    {
+    case 1: printf("Poniedzialek\n");
+      break;
+    case 2: printf("wtorek\n");
+      break;
+    case 3: printf("sroda\n");
+      break;
+    case 4: printf("czwartek\n");
+      break;
+    case 5: printf("piatek\n");
+      break;
+    case 6: printf("sobota\n");
+      break;
+    case 7: printf("niedziela\n");
+      break;
+    default: printf("nie ma takiego dnia tygodnia!!");
+    }
+  b=(100%7)+a;
+  printf("za 100 dni bedzie: ");
+  switch (b)
+    {
+    case 8: printf("Poniedzialek");
+      break;
+    case 9: printf("wtorek");
+      break;
+    case 3: printf("sroda");
+      break;
+    case 4: printf("czwartek");
+      break;
+    case 5: printf("piatek");
+      break;
+    case 6: printf("sobota");
+      break;
+    case 7: printf("niedziela");
+      break;
+  
+    }
+}
+```
