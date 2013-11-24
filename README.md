@@ -814,7 +814,8 @@ main()
     }
 }
 ```
-5. funkcja silnia
+
+5.funkcja silnia
 ```c
 #include <stdio.h>
 int silnia (int n, int wynik, int i)
