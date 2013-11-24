@@ -814,4 +814,25 @@ main()
     }
 }
 ```
+5. funkcja silnia
+```c
+#include <stdio.h>
+int silnia (int n, int wynik, int i)
+{
+  wynik=1;
+  printf("Podaj n: ");
+  scanf("%i",&n);
+  for (i=1; i<=n; i++)
+    {
+      wynik=wynik*i;
+    }
+ printf("%i\n",wynik);
+}
+main ()
+{ 
+  int n, i, wynik;
+  silnia(n, wynik, i);
+}
+```
+
 
