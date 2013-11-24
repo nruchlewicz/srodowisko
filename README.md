@@ -719,3 +719,29 @@ main ()
     }}
 ```
 
+2. Program dziala do momentu nacisniecia 4, pyta uzytkownika o wybor, instrukcja switch.
+```c
+# include <stdio.h>
+main ()
+{
+  int wybor;
+  printf("1: wyswietl A\n2: wyswietl C\n3: wyswietl F\n4: koniec");
+  printf("\nPodaj liczbe: ");
+  scanf("%d",&wybor);
+  while (wybor!=4){
+  switch (wybor)
+    {
+    case 1: printf("A\n");
+      break;
+    case 2: printf("C\n");
+      break;
+    case 3: printf("F\n");
+      break;
+    case 4:  break;
+    default: printf("podano zly znak");
+    }
+  printf("\nPodaj liczbe: ");
+  scanf("%d",&wybor);
+}
+}
+```
