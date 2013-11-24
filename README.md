@@ -794,3 +794,23 @@ main()
     }
 }
 ```
+4. Funkcja, ktora przyjmuje 1argument typu int n, a nastepnie wyswietla "dzien dobry" n razy
+```c
+#include <stdio.h>
+int ile_razy (int n)
+{
+  scanf("%i",&n);
+  return n;
+}
+main()
+{
+  int i,n;
+  printf("Podaj liczbe n: ");
+  n=ile_razy(n);
+ for (i=0; i<n; i++)
+    {
+      printf("Dzien dobry\n");
+    }
+}
+```
+
