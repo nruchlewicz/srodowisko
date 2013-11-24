@@ -794,6 +794,7 @@ main()
     }
 }
 ```
+
 4. Funkcja, ktora przyjmuje 1argument typu int n, a nastepnie wyswietla "dzien dobry" n razy
 ```c
 #include <stdio.h>
