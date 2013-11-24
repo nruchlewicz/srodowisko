@@ -862,3 +862,44 @@ main ()
   printf("%3.3f",oblicz(lewy, op, prawy, wynik));
 }
 ```
+7. tablica 100 losowych liczb, wyswietla najwiekszy element
+```c
+#include <stdio.h>
+main()
+{
+  int tab[100];
+  int i,e;
+  for(i=0; i<100; i++)
+    {
+      e=rand();
+         printf("%d\n",(tab[i]=e));
+    }
+ int max = tab[0];
+ for (i=0; i<100; ++i){
+    if(tab[i] > max)
+      max =tab[i];
+ }
+  printf("Najwieksza wartosc to:%d ",max);
+}
+ ```
+ 
+8.tablica 100 liczb losowych od 0 do 10 i wyswietla ich sume. 
+```c
+#include <stdio.h>
+main()
+{
+  int tab[100];
+  int i,e;
+  for(i=0; i<100; i++)
+    {
+      e=(rand(10)%11);
+         printf("%d\n",(tab[i]=e));
+    }
+  int suma=0;
+  for (i=0; i<100; i++){
+    suma=tab[i]+suma;
+ }
+  printf("suma wszyskich elementow tablicy to: %d",suma);
+}
+ ```        
+
