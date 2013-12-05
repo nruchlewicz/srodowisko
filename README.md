@@ -160,21 +160,24 @@ program wypisujacy potegi liczby 2 za pomoca petli while i for
 
 ```c
 #include <stdio.h>
-main ()
+int main()
 {
-  int tab[]={1,3,7,8,9};
-  int i;
-  for (i=0; i<5; i++)
-    {
-      printf("\n%i",tab[i]);
-    }
-  printf("\n");
-for (i=4; i>=0; i--)
-    {
-      printf("\n%i",tab[i]);
-    }
+    int i;
+    int tab[]={1,3,7,8,9};
+    printf("Tablica w podanej kolejności: ");
+    for (i=0; i<5; i++)
+        {
+        printf("%i ",tab[i]);
+        }
+    printf("\nTablica w odwrotnej kolejnosci: ");
+    for (i=4; i>=0; i--)
+        {
+        printf("%i ",tab[i]);
+        }
+    return 0;
 }
 ```
+
 2. wczytuje do uzytkownika dane piecioelementowej tablicy i wypisuje jej zawartosc  oraz zawartosc w odwrtnej kolejnosci
 
 ```c
