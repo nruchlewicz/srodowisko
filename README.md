@@ -35,7 +35,7 @@ Program, ktory wypisuje na akranie czesc
 
 //Program, ktory wypisuje na ekranie liczby od 1do15 co 1 i od 16 d0 31 co 2
 ```c
-  main ()
+ /* main ()
  {
    int n,i;
    for (n=1; n<31; n=n+1)
@@ -45,7 +45,22 @@ Program, ktory wypisuje na akranie czesc
        
 	 else printf("\naktualna liczba to:%i ",i);
        }
- }
+ } */
+#include <stdio.h>
+#include <stdlib.h>
+
+int main ()
+ {
+   int n,i;
+   i=0;
+   for (n=1; n<31; n=n+1)
+     {
+       if (n<15) {printf ("\naktualna liczba to:%i  ",n );}
+
+       else {  n=n+1;
+           printf("\naktualna liczba to:%i ",n);
+           } }
+   return 0;
  ```
  
  //wczytanie liczby z klawiatury i wypisanie jej kwadratu i szecianu
