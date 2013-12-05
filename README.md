@@ -279,7 +279,7 @@ printf("%i ",a);
 6. zadeklarowana tab 5-elementow i uzupelni kolejnymi potegami liczby2 i wyswietli;
 
 ```c
-#include <stdio.h>
+/*#include <stdio.h>
 main()
 {
   int tab[5];
@@ -295,6 +295,25 @@ main()
       printf("%i ", tab[i]);
     }
 }
+*/
+int main()
+{
+    int i, n;
+    n=1;
+    int tab[5];
+        for (i=0; i<5; i++) // uzupełnienie tablicy potegami liczby 2.
+        {
+            n=n*2;
+            tab[i]=n;
+        }
+        for (i=0; i<5; i++)
+        {
+            printf("\n%i element tablicy to: %i",i,tab[i]);
+        }
+
+    return 0;
+}
+
 ```
 
 7. wczytuje od uzytkownika dane do tab i wyswietla ich sume.
