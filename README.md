@@ -1104,3 +1104,21 @@ main ()
   printf("ciąg fibonacciego z 15 = %i",f(n));
 }
 ```
+
+Zad8. Funkcja z dużą potęgą.
+```c
+#include <stdio.h>
+double potega ( double x, int n)
+{
+  if (n==0) return 1.0;
+  else if (n%2==0) return potega (x*x, n/2);
+  else return x*potega(x*x,n/2);
+}
+main ()
+{
+  double x,n;
+  x=2;
+  n=10;
+  printf("%3.3f",potega(x, n));
+}
+```
