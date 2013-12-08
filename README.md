@@ -987,3 +987,33 @@ main()
 }
 ```
 
+Zad2. Dwie funkcje, pierwsza sprawdza czy otrzymany argument jest podzielny przez2, a druga czy jest podzielny przez 3. Zastosować te funcje w programie, który bedzie czytał z wejścia liczbę i stwierdzał czy jest ona podzielna przez 2, 3 i przez 6. Np. liczba 9 jest podzielna przez 3. Liczba 12 jest podzielna przez 2, 3 i 6.
+```c
+#include <stdio.h>
+
+int dwa (int liczba)
+{
+  if (liczba%2==0){
+    return 1;}
+  else {printf(" ");
+    return 0;}
+ }
+int trzy (int liczba)
+{
+  if (liczba%3==0){
+    return 1;}
+  else{ printf("");
+    return 0;}
+ 
+}
+main()
+{
+  int liczba;
+  printf("Podaj liczbe calkowita: ");
+  scanf("%i",&liczba);
+  if (dwa(liczba)==1) printf("Liczba jest podzielna przez 2\n");
+  if (trzy(liczba)==1) printf("Liczna jest podzielna przez 3\n");
+  if (dwa(liczba)&&trzy(liczba)) printf("Liczba jest podzielna przez 6");
+  else printf("");
+} 
+```
