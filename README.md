@@ -993,17 +993,13 @@ Zad2. Dwie funkcje, pierwsza sprawdza czy otrzymany argument jest podzielny prze
 
 int dwa (int liczba)
 {
-  if (liczba%2==0){
-    return 1;}
-  else {printf(" ");
-    return 0;}
+  if (liczba%2==0) return 1;
+  else return 0;
  }
 int trzy (int liczba)
 {
-  if (liczba%3==0){
-    return 1;}
-  else{ printf("");
-    return 0;}
+  if (liczba%3==0) return 1;
+  else return 0;
  
 }
 main()
