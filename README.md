@@ -1124,7 +1124,7 @@ main ()
 /* wynik=1024. Ponieważ: potega(2.0, 10)=potega(4.0, 5)=4.0*potega(16.0, 2)=1024 */
 ```
 
-Zad9. Napisać funkcję rekurencyjną obliczającą kwadrat liczby naturalnej bez uzycia mnożenia w oparciu o własności:
+Zad9. Napisać funkcję rekurencyjną obliczającą kwadrat liczby naturalnej(podanej przez uzytkownika) bez uzycia mnożenia w oparciu o własności:
 0^2=0;
 (n+1)^2=n^2+2n+1; 
 ```c
@@ -1142,6 +1142,9 @@ main ()
 {
   int n;
   n=6;
+  printf("%i do kwadratu= %i",n,kwadrat(n));
+}
+
   printf("%i do kwadratu= %i",n,kwadrat(n));
 }
 ```c
