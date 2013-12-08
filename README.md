@@ -1035,9 +1035,9 @@ int NWD (int a, int b)
 {
   if (b==a) return a;
   else 
-    if (b>a) return NWD(a,b-a); 
+    if (b>a) return NWD(a,b-a); // NWD(a,b)=NWD(a, b-a)
   else 
-    if (a>b) return NWD(a-b,b);
+    if (a>b) return NWD(a-b,b); // NWD(a,b)=NWD(a-b, b)
 }
 main()
 {
