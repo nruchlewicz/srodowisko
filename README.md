@@ -945,3 +945,45 @@ main()
 }
  ```        
 
+#LAB7
+zad1. Funcje 
+```c
+#include <stdio.h>
+//funkcja wyswietla dzien dobry
+void f1 ()
+{
+  printf("F1: dzien dobry\n");
+}
+//f. wyswietla dzien dobry, otrzymana w argumencie liczbę razy.
+//f nie przekazuje żadnej wartosci.
+void f2 (int a)
+{
+  int i;
+  printf("F2: Podaj liczbe: ");
+  scanf("%i",&a);
+  for (i=0; i<a; i++)
+    {
+  printf("\ndzien dobry");
+    }
+}
+//to co f2, a ponadto zwróci wartość (int) 0;
+int f3 (int a)
+{
+  int i;
+  printf("\nF3: Podaj liczbe: ");
+  scanf("%i",&a);
+  for (i=0; i<a; i++)
+    {
+  printf("\ndzien dobry");
+    }
+  return 0;
+}
+main()
+{
+  int a;
+  f1();
+  f2(a);
+  f3(a);
+}
+```
+
