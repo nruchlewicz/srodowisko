@@ -1127,3 +1127,21 @@ main ()
 Zad9. Napisać funkcję rekurencyjną obliczającą kwadrat liczby naturalnej bez uzycia mnożenia w oparciu o własności:
 0^2=0;
 (n+1)^2=n^2+2n+1; 
+```c
+/*Napisać funkcję rekurencyjną obliczającą kwadrat liczby naturalnej bez uzycia mnożenia w oparciu o własności:
+0^2=0;
+(n+1)^2=n^2+2n+1; */
+#include <stdio.h>
+
+int kwadrat (int n)
+{
+  if (n==0) return 0;
+  else return kwadrat(n-1)+(n-1)+(n-1)+1;
+}
+main ()
+{
+  int n;
+  n=6;
+  printf("%i do kwadratu= %i",n,kwadrat(n));
+}
+```c
