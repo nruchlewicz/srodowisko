@@ -1071,7 +1071,7 @@ main()
 }
 ```
 
-Zad6. Funkcja obliczająca ciąg Fibonacciego z 15.
+Zad6. Funkcja obliczająca ciąg Fibonacciego z f(15).
 ```c
 #include <stdio.h>
 int f (int n)
@@ -1084,6 +1084,23 @@ main ()
 {
   int n;
   n=15;
+  printf("ciąg fibonacciego z 15 = %i",f(n));
+}
+```
+Zad7. Funkcja obliczająca ciąg Fibonacciego z f(n), gdzie n podaje użytkownik. 
+```c
+#include <stdio.h>
+int f (int n)
+{
+  if (n==0) return 0; //f(0)=0;
+  if (n==1) return 1; //f(1)=1;
+  else return f(n-2)+f(n-1); //f(n+2)=f(n)+f(n+1);
+}
+main ()
+{
+  int n;
+  printf("Podaj liczbę: ");
+  scanf("%i",&n);
   printf("ciąg fibonacciego z 15 = %i",f(n));
 }
 ```
