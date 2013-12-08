@@ -1119,8 +1119,9 @@ main ()
   double x,n;
   x=2;
   n=10;
-  printf("%3.3f",potega(x, n));
+  printf("%3.3f",potega(x, n));  
 }
+/* wynik=1024. Ponieważ: potega(2.0, 10)=potega(4.0, 5)=4.0*potega(16.0, 2)=1024 */
 ```
 
 Zad9. Napisać funkcję rekurencyjną obliczającą kwadrat liczby naturalnej bez uzycia mnożenia w oparciu o własności:
