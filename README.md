@@ -1122,3 +1122,7 @@ main ()
   printf("%3.3f",potega(x, n));
 }
 ```
+
+Zad9. Napisać funkcję rekurencyjną obliczającą kwadrat liczby naturalnej bez uzycia mnożenia w oparciu o własności:
+0^2=0;
+(n+1)^2=n^2+2n+1; 
