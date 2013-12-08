@@ -1027,3 +1027,25 @@ main()
   printf("%i!=%i\n",n,silnia(n));
 }
 ```
+
+Zad4. Funkcja obliczająca NWD dwóch podanych w programie liczb. 
+```c
+#include <stdio.h>
+int NWD (int a, int b)
+{
+  if (b==a) return a;
+  else 
+    if (b>a) return NWD(a,b-a);
+  else 
+    if (a>b) return NWD(a-b,b);
+}
+main()
+{
+  int a,b;
+  printf("Podaj a: ");
+  scanf("%i",&a);
+  printf("Podaj b: ");
+  scanf("%i",&b);
+  printf("NWD liczb: %i, %i = %i\n",a,b,NWD(a,b));
+}
+```
