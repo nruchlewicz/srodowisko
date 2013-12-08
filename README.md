@@ -1070,3 +1070,20 @@ main()
   printf("NWD liczb: %i, %i = %i\n",a,b,NWD(a,b));
 }
 ```
+
+Zad6. Funkcja obliczająca ciąg Fibonacciego z 15.
+```c
+#include <stdio.h>
+int f (int n)
+{
+  if (n==0) return 0; //f(0)=0;
+  if (n==1) return 1; //f(1)=1;
+  else return f(n-2)+f(n-1); //f(n+2)=f(n)+f(n+1);
+}
+main ()
+{
+  int n;
+  n=15;
+  printf("ciąg fibonacciego z 15 = %i",f(n));
+}
+```
