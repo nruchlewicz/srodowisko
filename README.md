@@ -1018,8 +1018,8 @@ Zad3. Funkcja rekurencyjna liczaca silnie od liczby n=10.
 #include <stdio.h>
 int silnia (int n)
 {
-  if (n==0) return 1;
-  else return n*silnia(n-1);
+  if (n==0) return 1; // ponieważ 0!=1.
+  else return n*silnia(n-1); //funkcja wykonuje sama siebie, do czasu, aż n==0. Wtedy za n przyjmie wartość 1.
 }
 main()
 {
@@ -1035,7 +1035,7 @@ int NWD (int a, int b)
 {
   if (b==a) return a;
   else 
-    if (b>a) return NWD(a,b-a);
+    if (b>a) return NWD(a,b-a); 
   else 
     if (a>b) return NWD(a-b,b);
 }
