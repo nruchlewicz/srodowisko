@@ -1170,4 +1170,3 @@ int potega (int n, int k)
 
 }
 ```
-```c
