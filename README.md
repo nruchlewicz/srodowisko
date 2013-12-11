@@ -1151,6 +1151,7 @@ main ()
 
 #ZADANIA Dr. W. Bzyl - REKURENCJA
 1. Napisać rekurencyjną implementację funkcji obliczającej n do potęgi k.
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -1170,7 +1171,6 @@ int potega (int n, int k)
 
 }
 ```
-
 
 2. Napisać funkcję rekurencyjną C(n,k) obliczającą współczynnik Newtona
 n po k, czyli liczbę podzbiorów k-elementowych zbioru n-elementowego.
