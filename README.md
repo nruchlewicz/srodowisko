@@ -1171,8 +1171,10 @@ int potega (int n, int k)
 }
 ```
 
+
 2. Napisać funkcję rekurencyjną C(n,k) obliczającą współczynnik Newtona
 n po k, czyli liczbę podzbiorów k-elementowych zbioru n-elementowego.
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
