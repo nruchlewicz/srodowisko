@@ -1147,4 +1147,27 @@ main ()
 
   printf("%i do kwadratu= %i",n,kwadrat(n));
 }
+```
+
+#ZADANIA Dr. W. Bzyl - REKURENCJA
+1. Napisać rekurencyjną implementację funkcji obliczającej n do potęgi k.
+```c
+#include <stdio.h>
+#include <stdlib.h>
+int potega (int n, int k)
+{
+    if (k==0) return 1;
+    else return n*potega(n*n, k/2);
+}
+ main()
+{
+    int n,k;
+    printf("Podaj liczbe: ");
+    scanf("%d",&n);
+    printf("\ndo potegi: ");
+    scanf("%d",&k);
+    printf("%d",potega(n, k));
+
+}
+```
 ```c
