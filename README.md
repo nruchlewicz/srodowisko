@@ -1013,7 +1013,7 @@ main()
   else printf("");
 } 
 ```
-Zad3. Funkcja rekurencyjna liczaca silnie od liczby n=10.
+Zad3. a)Funkcja rekurencyjna liczaca silnie od liczby n=10.
 ```c
 #include <stdio.h>
 int silnia (int n)
@@ -1025,6 +1025,23 @@ main()
 {
   int n=10;
   printf("%i!=%i\n",n,silnia(n));
+}
+```
+zad3. b)Funkcja rekurencyjna licząca silnię z n!. Gdzie n podaje użytkownik.
+```c
+#include <stdio.h>
+
+int silnia (int n)
+{
+    if ((n==0) || (n==1)) return 1;
+    else return n*silnia(n-1);
+}
+main()
+{
+    int n;
+    printf("podaj liczbe n: ");
+    scanf("%i",&n);
+    printf("%i! = %i",n,silnia(n));
 }
 ```
 
