@@ -1214,6 +1214,7 @@ int main()
 #LAB8
 
 1. Program z funkcją, która rozkłada podaną liczbę n<=1 na czynniki pierwsze. 
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
