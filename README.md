@@ -1432,23 +1432,23 @@ int main () {
     for (y=0; y<wys; y=y+1)
       rysuj(x, y, ' ');
 
-  pion = interpoluj(0, dol_x, gora_x, szer);
+  pion = interpoluj(0, dol_x, gora_x, szer);   //rysuje oś pionową |
   for(y=0; y<wys; y=y+1)
-    rysuj(pion, y, '|');
+    rysuj(pion, y, '|'); 
 
-  poziom = interpoluj(0, dol_y, gora_y, wys);
+  poziom = interpoluj(0, dol_y, gora_y, wys);  //rysuje oś poziomą --
   for(x=0; x<szer; x=x+1)
-    rysuj(x, poziom, '-');
+    rysuj(x, poziom, '-'); 
 
-  rysuj(pion, poziom, '+');
+  rysuj(pion, poziom, '+');  //rysuje + na środku układu współrzednych 
 
-  for (x=0; x<szer; x=x+1) 
+  for (x=0; x<szer; x=x+1)    //wykres dla funkcji_b(x)
     rysuj(x, f_b(x), '*');
 
- for (x=0; x<szer; x=x+1) 
+ for (x=0; x<szer; x=x+1)     //wykres na funkcji(x).
     rysuj(x, funkcja(x), 'o');
 
- for (x=0; x<szer; x=x+1) 
+ for (x=0; x<szer; x=x+1)    //wykres dla funckji_c(x).
     rysuj(x, funkcja_c(x), '@');
 
   for (y=wys-1; y>=0; y=y-1) {
