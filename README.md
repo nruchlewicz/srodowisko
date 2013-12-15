@@ -1462,3 +1462,69 @@ int main () {
   return 0;
 }
 ```
+//Program rysuje wykres dla x*sin(x);
+#include<stdio.h>
+#include<math.h>
+
+#define szer 50
+#define wys 30
+#define dol_x -5
+#define gora_x 5
+#define dol_y -5
+#define gora_y 5.0
+
+double funkcja_c (double x) 
+{
+  return x*sin(x) ;
+}
+
+char  rysunek[szer][wys];
+
+void  rysuj(int x, int y, char znak) {
+  if (0<=x && x<szer && 0<=y && y<wys)
+    rysunek[x][y] = znak;
+}
+
+
+int  interpoluj (double x, double a, double b, int n) {
+  return  floor((x-a)*n/(b-a));
+}
+
+int  f_c (int x) {
+  return
+    interpoluj(
+           funkcja_c( ((double)gora_x - (double)dol_x)/szer*x + dol_x),
+                 dol_y,  gora_y,  wys
+               );
+}
+
+int main () {
+  int  x,y, poziom, pion;
+  printf("\nWYKRES FUNKCJI :\n\n ");
+  for (x=0; x<szer; x=x+1)
+    for (y=0; y<wys; y=y+1)
+      rysuj(x, y, ' ');
+  //rysuje oś pionową |
+  pion = interpoluj(0, dol_x, gora_x, szer);
+  for(y=0; y<wys; y=y+1)
+    rysuj(pion, y, '|');
+  //rysuje oś poziomą -
+  poziom = interpoluj(0, dol_y, gora_y, wys);
+  for(x=0; x<szer; x=x+1)
+    rysuj(x, poziom, '-');
+  //rysuje + na środku układu wspołrzędnych 
+  rysuj(pion, poziom, '+');
+ 
+ for (x=0; x<szer; x=x+1) 
+    rysuj(x, f_c(x), '@');
+
+    for (y=wys-1; y>=0; y=y-1) {
+    for (x=0; x<szer; x=x+1)
+      printf("%c", rysunek[x][y]);
+    printf("\n ");
+  }
+ 
+  printf("\n\n");
+
+  return 0;
+}
