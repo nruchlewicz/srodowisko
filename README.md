@@ -1292,3 +1292,32 @@ main()
     }
 }
 ```
+
+Zad3.Program oblicza pierwiastek kwardatowy z x z dokładnością do eps.
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+double pierw2pom (double a, double x, double b, double eps)
+{
+  if (b-a<eps) return a;
+  else 
+    {
+      double c;
+      c=((a+b)/2);
+      if (x<c*c) return pierw2pom(a,x,c,eps);
+      else 
+        return pierw2pom(c,x,b,eps);
+    }
+}
+double pierw2 (double x, double eps)
+{
+  return pierw2pom(0,x,1+x, eps);
+}
+main()
+{
+  double x=2.0, eps=0.3;
+  printf("%f",pierw2(x, eps));
+}
+```
