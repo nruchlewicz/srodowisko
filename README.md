@@ -1250,6 +1250,7 @@ main()
 ```
 
 2. Program z funkcją, która rozkłada podaną liczbę n<=1 na czynniki pierwsze. Wersja iteracyjna.
+
 ```c
 #include <stdio.h>
 #define DUZO 1000
