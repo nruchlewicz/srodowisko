@@ -1340,8 +1340,13 @@ double funkcja (double x)
   return (x*(3/27))-(2*x*(2/9))+(x/3)+2;
 }
 
-double  funkcja_b (double x) {
+double  funkcja_b (double x) 
+{
   return  log(x+1);
+}
+double funkcja_c (double x) 
+{
+  return x*sin(x) ;
 }
 
 int main () {
@@ -1352,11 +1357,19 @@ int main () {
   for (x=dol_x; x<=gora_x; x=x+krok_x) //tablica warofści dla x*3/27 - 2*x*2/9 + x/3 + 2
     printf("\n %8.4lf | %10.4lf ", x, funkcja(x));
   printf("\n\n");
+  
   printf("\nTABLICOWANIE FUNKCJI:\n");
   printf("\n Argument |   Wartosc   ");
   printf("\n----------+-------------");
   for (x=dol_x; x<=gora_x; x=x+krok_x)
     printf("\n %8.4lf | %10.4lf ", x, funkcja_b(x)); //tablica wartości dla log(x+1)
+  printf("\n\n");
+    
+  printf("\nTABLICOWANIE FUNKCJI:\n");
+  printf("\n Argument |   Wartosc   ");
+  printf("\n----------+-------------");
+  for (x=dol_x; x<=gora_x; x=x+krok_x)
+    printf("\n %8.4lf | %10.4lf ", x, funkcja_c(x)); //tablica wartości dla f(x)=x*sin(x)
   printf("\n\n");
 
   return 0;
