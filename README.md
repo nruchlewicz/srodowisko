@@ -1321,3 +1321,43 @@ main()
   printf("%f",pierw2(x, eps));
 }
 ```
+Zad4. program drukuje wszystkie rzeczywiste wartości zdefiniowanej w nim funkcji
+funkcja począwszy od rzeczywistej wartości dol_x do rzeczywistej 
+wartości gora_x z rzeczywistym krokiem krok_x.
+
+```c
+#include<stdio.h>
+#include<math.h>
+
+#define dol_x -0.9
+#define gora_x 8
+#define krok_x 0.1
+
+double funkcja (double x)
+{
+  return (x*(3/27))-(2*x*(2/9))+(x/3)+2;
+}
+
+double  funkcja_b (double x) {
+  return  log(x+1);
+}
+
+int main () {
+  double x;
+  printf("\nTABLICOWANIE FUNKCJI:\n");
+  printf("\n Argument |   Wartosc   ");
+  printf("\n----------+-------------");
+  for (x=dol_x; x<=gora_x; x=x+krok_x) //tablica warofści dla x*3/27 - 2*x*2/9 + x/3 + 2
+    printf("\n %8.4lf | %10.4lf ", x, funkcja(x));
+  printf("\n\n");
+  printf("\nTABLICOWANIE FUNKCJI:\n");
+  printf("\n Argument |   Wartosc   ");
+  printf("\n----------+-------------");
+  for (x=dol_x; x<=gora_x; x=x+krok_x)
+    printf("\n %8.4lf | %10.4lf ", x, funkcja_b(x)); //tablica wartości dla log(x+1)
+  printf("\n\n");
+
+
+  return 0;
+}
+```
