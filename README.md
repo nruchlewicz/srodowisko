@@ -1463,6 +1463,8 @@ int main () {
 }
 ```
 //Program rysuje wykres dla x*sin(x);
+
+```c
 #include<stdio.h>
 #include<math.h>
 
@@ -1528,3 +1530,4 @@ int main () {
 
   return 0;
 }
+```
