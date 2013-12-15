@@ -1325,6 +1325,8 @@ Zad4. program drukuje wszystkie rzeczywiste wartości zdefiniowanej w nim funkcj
 funkcja począwszy od rzeczywistej wartości dol_x do rzeczywistej 
 wartości gora_x z rzeczywistym krokiem krok_x.
 
+Wywołanie w kompilatorze gcc -o ... -lm + deklaracja biblioteki <math.h>
+
 ```c
 #include<stdio.h>
 #include<math.h>
@@ -1356,7 +1358,6 @@ int main () {
   for (x=dol_x; x<=gora_x; x=x+krok_x)
     printf("\n %8.4lf | %10.4lf ", x, funkcja_b(x)); //tablica wartości dla log(x+1)
   printf("\n\n");
-
 
   return 0;
 }
