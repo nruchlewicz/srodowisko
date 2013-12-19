@@ -1532,7 +1532,7 @@ int main () {
 }
 ```
 
-#Zad z funkcji.
+#Zad z funkcjami.
 
 ```c
 #include <stdio.h>
@@ -1568,6 +1568,30 @@ int main()
     printf("\nPodaj wysokosc stozka: ");
     scanf("%i",&h);
     printf("\nPole powiezchni stozka wynosi %3.2f",stozek(h,r));
+    return 0;
+}
+```
+
+f. sprawdza, czy podana liczba z zakresu od 0 do 1000 jest parzysa. 
+```c
+#include <stdio.h>
+#include <stdlib.h>
+void spr (int i)
+{
+       if (i%2==0) printf("Liczba %i jest parzysta",i);
+       else printf("\nliczba %i nie jest parzysta",i) ;
+}
+int main()
+{
+    int i;
+    printf("Podaj i: ");
+    scanf("%i", &i);
+    while ((i<0)||(i>1000))
+    {
+    printf("Podaj i: ");
+    scanf("%i",&i);
+    }
+    spr(i);
     return 0;
 }
 ```
