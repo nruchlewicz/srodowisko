@@ -1531,3 +1531,43 @@ int main () {
   return 0;
 }
 ```
+
+#Zad z funkcji.
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#define pi 3.14
+int prosto (int a, int b)
+{
+    return a*b;
+}
+int delto (int c, int d)
+{
+    return (c*d)/2;
+}
+double stozek (int h, int r)
+{
+    return ((pi*r*r)*h)/3;
+}
+int main()
+{
+    int a,b,c,d,h,r;
+    printf("\nPodaj bok a: ");
+    scanf("%i",&a);
+    printf("\nPodaj bok b: ");
+    scanf("%i",&b);
+    printf("\nPole prostokata o bokach %i, %i wynosi: %i",a,b,prosto(a,b));
+    printf("\nPodaj przekatna deltoidu: ");
+    scanf("%i",&c);
+    printf("\nPodaj druga przekatna deltoidu: ");
+    scanf("%i",&d);
+    printf("\nPole deltoidu o przekatnych %i, %i wynosi: %i",c,d,delto(a,b));
+    printf("\nPodaj promien podstawy stozka: ");
+    scanf("%i",&r);
+    printf("\nPodaj wysokosc stozka: ");
+    scanf("%i",&h);
+    printf("\nPole powiezchni stozka wynosi %3.2f",stozek(h,r));
+    return 0;
+}
+```
