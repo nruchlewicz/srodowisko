@@ -1581,7 +1581,7 @@ void spr (int i)
        if (i%2==0) printf("Liczba %i jest parzysta",i);
        else printf("\nliczba %i nie jest parzysta",i) ;
 }
-int main()
+main()
 {
     int i;
     printf("Podaj i: ");
@@ -1592,6 +1592,38 @@ int main()
     scanf("%i",&i);
     }
     spr(i);
-    return 0;
 }
 ```
+
+Program, który zawiera funkcję, która odpowiada czy podana liczba z zakresu od 1 do 10000 jest pierwsza.
+```c
+#include <stdio.h>
+#include <stdlib.h>
+double w;
+int pierwsza (int p)
+{
+    int i;
+ for(i=2; i<p; i++)
+     {
+          w=(p%i);
+          if( w==0) {
+              printf("%d  nie jest liczba pierwsza.\n", p);
+              break;}
+          else {
+              printf("%d jest liczba pierwsza.\n", p);
+              break;
+          }
+     }
+}
+main()
+{
+    int p;
+    printf("Podaj liczbe: ");
+    scanf("%i",&p);
+    while ((p<0)||(p>1000))
+    {
+    printf("Podaj liczbe: ");
+    scanf("%i",&p);
+    }
+    pierwsza(p);
+}
