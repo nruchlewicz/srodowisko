@@ -1627,3 +1627,34 @@ main()
     }
     pierwsza(p);
 }
+```
+
+Program, który zawiera funkcję, która oblicza wartość sumy liczb od 11 do 50 – użyć pętli for; użyć pętli while.
+```c
+#include <stdio.h>
+#include <stdlib.h>
+int suma (int suma)
+{
+    int i;
+    suma=0;
+    for (i=11; i<=50; i++)
+     suma=i+suma;
+     return suma;
+}
+int suma2 (int suma)
+{
+    int i=11;
+    suma=0;
+    while (i<=50)
+    {
+        suma=suma+i;
+        i++;
+    }
+    return suma;
+}
+main()
+{
+   printf("Suma liczb od 11 do 50 wynosi: %i",suma(suma));
+   printf("\nSuma liczb od 11 do 50 wynosi: %i",suma2(suma));
+}
+```
