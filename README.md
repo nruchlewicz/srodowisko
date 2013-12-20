@@ -1658,3 +1658,20 @@ main()
    printf("\nSuma liczb od 11 do 50 wynosi: %i",suma2(suma));
 }
 ```
+
+Program, który zawiera funkcję obliczającą silnię od 0 do 10. 
+```c
+#include <stdio.h>
+#include <stdlib.h>
+int silnia (int n)
+{
+    if ((n==0)||(n==1)) return 1;
+    else return n*silnia(n-1);
+}
+main()
+{
+    int n;
+    for (n=0; n<=10; n++)
+    printf("%i!= %i\n",n,silnia(n));
+}
+```
