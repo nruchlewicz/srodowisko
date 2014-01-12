@@ -1675,3 +1675,27 @@ main()
     printf("%i!= %i\n",n,silnia(n));
 }
 ```
+
+#Lab9
+1. Wskaźniki, przeanalizawać. 
+```c
+
+#include <stdio.h>
+main ()
+{
+  int t[3];
+  int i,j;
+  int *adt;
+  for (i=0, j=0; i<3; i++) t[i]=j++ +i;
+  for (i=0; i<3; i++) printf("%d",t[i]);
+  printf("\n");
+  for (i=0; i<3; i++) printf ("%d",*(t+i));
+  printf("\n");
+  for (adt=t; adt<t+3; adt++) printf("%d",*adt);
+  printf("\n");
+  for (adt=t+2; adt>=t; adt--)
+  printf("%d",*adt);
+  printf("\n");
+	 }
+```
+
