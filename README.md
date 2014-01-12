@@ -1699,3 +1699,18 @@ main ()
 	 }
 ```
 
+2. 
+```c
+#include <stdio.h>
+main()
+{
+  int t[4]={10,20,30,40};
+  int *ad[4]; //deklaracja wskaźnika do wartości. 
+  int i;
+  for (i=0; i<4; i++) ad[i]=t+i; /*przypisanie do tablicy ad[4] wartości z tablicy t[4]={10,20,30,40} */
+  for (i=0; i<4; i++) printf("%d ",*ad[i]); /*wypisanie tablicy ad[i]*/
+  printf("\n");
+  printf("%d %d \n",*(ad[1]+1), *ad[1]+1); /*wypisanie wartośći, która znajduje się pod:  *(ad[1]*1), czyli ad[2] -> 30, oraz wypisanie wartości z *ad[1]+1-> 20+1= 21; 
+}
+```
+
