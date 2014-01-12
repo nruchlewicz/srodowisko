@@ -1678,8 +1678,9 @@ main()
 
 #Lab9
 1. Wskaźniki, przeanalizawać. 
-```c
 
+
+```c
 #include <stdio.h>
 main ()
 {
@@ -1699,7 +1700,7 @@ main ()
 	 }
 ```
 
-2. 
+2.
 ```c
 #include <stdio.h>
 main()
