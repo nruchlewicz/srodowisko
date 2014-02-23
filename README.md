@@ -1726,7 +1726,17 @@ from math import sqrt
 a = 1
 b = 5
 c = 6
-
+wynik = ((a ==0) and [ 
+                       ((b == 0) and [ ((c ==0 ) and ['duzo'] or ['brak']) [0]
+                                     ] or
+                                     ['x=%f' % (-c)/(b*1.0)
+                                      ])[0]
+                                              ] or 
+                                              [ (d>0)  and  ['x1=%f, x2= %f' % ((-b -sqrt(d))/(2*a),(-b +sqrt(d))/(2*a))]
+                                                or [((d==0) and ['x=%f '%f (-b)/(2.0*a)] or ["......"] [0] )] 
+                                                                              
+                                               ]
+                       )[0]
 
 if a == 0:
     if b == 0:
